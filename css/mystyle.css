@@ -91,8 +91,9 @@ body {
 
 .main-header-img {
     position: absolute;
-    top: -100px;
+    top: -210px;
     right: 25%;
+    z-index: 1;
 }
 
 .main-header-middle-title {
@@ -167,7 +168,6 @@ body {
     font-family: 'Source Sans Pro', Arial, sans-serif;
     font-size: 14px;
     line-height: 14px;
-    font-weight: normal;
     font-weight: lighter;
     color: rgba(33, 32, 33, 0.4);
 }
@@ -186,4 +186,94 @@ body {
     width: 12px;
     height: 2px;
     background-color: rgba(33, 32, 33, 0.4);
+}
+
+.section-title {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: #212021;
+}
+
+.portfolio-title {
+    text-transform: uppercase;
+}
+
+.portfolio-paragraph {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+
+    color: #1c1c1c;
+}
+
+.picture-with-title {
+    display: flex;
+    flex-direction: column-reverse;
+
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: lighter;
+    color: rgba(33, 32, 33, 0.4);
+}
+
+.detailed-title {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+
+    color: #212021;
+}
+
+.detailed-p {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+
+    color: #212021;
+}
+
+.link-download {
+    position: relative;
+
+    font-family: 'Myriad', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #212021;
+}
+
+.link-download::before {
+    content: "";
+    position: absolute;
+
+    width: 165px;
+    height: 1px;
+
+    bottom: -8px;
+    left: 0;
+    background-color: #212021;
+}
+
+.link-download::after {
+    content: "";
+    position: absolute;
+
+    width: 24px;
+    height: 28px;
+
+    right: -35px;
+
+    background-image: url('../img/icon_pdf.png');
+    background-repeat: no-repeat;
+    background-position: 0;
 }
